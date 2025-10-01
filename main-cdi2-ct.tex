@@ -1,0 +1,351 @@
+%--------------------------------------------------------------------------
+%Option test file, will be created during the first LaTeX run:
+%\begin{filecontents}{exercicio.thm}
+%\def\th@exercicio{%
+%\normalfont % body font
+%\bfseries\color{red}% Theorem head font
+%\thm@headpunct{.}%
+%}
+%\end{filecontents}
+%--------------------------------------------------------------------------
+\documentclass[11pt,titlepage,twoside,openright]{report}
+\usepackage{amsmath,amstext,amsbsy,amsfonts,eucal,latexsym,amssymb}
+\usepackage[exercicio]{amsthm}
+\usepackage{graphicx}
+\usepackage{mathtools}
+%----------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+%----------------------------------------------------------------------------
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{layout}
+\usepackage{tasks}
+\usepackage{pstricks}
+\usepackage{pifont}
+\usepackage{pst-grad}
+\usepackage{fancybox}
+\usepackage[active]{srcltx}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{tabularx}
+\usepackage{framed}
+\usepackage{mdframed}
+\usepackage{enumitem}
+\usepackage[
+bookmarks = true,
+colorlinks=true,
+plainpages = false,
+citecolor = blue,
+urlcolor = blue,
+filecolor = blue,
+pageanchor = true]{hyperref}
+\usepackage{mdframed}
+\usepackage{cleveref}
+\usepackage[most,listings]{tcolorbox}
+%---------------------------------------------------------------------------
+\graphicspath{{imagen-eps/}{imagen-logo/}{imagen/}}
+%--------------------------------------------------------------------------
+%Change margins, papersize, etc of the document
+%\usepackage[inner=28mm, outer=41mm]{geometry}
+\usepackage[a4paper,margin=2.25cm]{geometry}
+%------------------------------------------------------------------------
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{1ex plus0.5ex minus0.2ex}
+%------------------------------------------------------------------------
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+%--------------------------------------------------------------------------
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\senh}{senh}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\arcsen}{arcsen}
+\DeclareMathOperator{\erf}{erf}
+\DeclareMathOperator{\erfc}{erfc}
+\DeclareMathOperator{\sgn}{sgn} 
+\DeclareMathOperator{\arcsenh}{arcsenh}
+\DeclareMathOperator{\arccosh}{arccosh}
+\DeclareMathOperator{\arctanh}{arctanh}
+\DeclareMathOperator{\csech}{csech}
+\DeclareMathOperator{\cotanh}{cotanh}
+\DeclareMathOperator*{\res}{Res}
+\DeclareMathOperator{\cosec}{cosec}
+\DeclareMathOperator{\arctg}{arctg}
+\DeclareMathOperator*{\supess}{\sup ess}
+%--------------------------------------------------------------------------
+\rhead[\nouppercase{\rightmark}]{\thepage}
+\lhead[\thepage]{\nouppercase{\leftmark}}
+\cfoot{}
+%--------------------------------------------------------------------------
+\newcommand{\field}[1]{\ensuremath{\mathbb{#1}}}
+\newcommand{\C}{\field{C}}
+\newcommand{\R}{\field{R}}
+\newcommand{\N}{\field{N}}
+\newcommand{\cl}[1]{\ensuremath{\mathcal{#1}}}
+\newcommand{\ele}{\cl{L}}
+\newcommand{\ere}{\cl{R}}
+\newcommand{\ene}{\cl{N}}
+\newcommand{\ent}{\Rightarrow}
+\newcommand{\mt}{\mapsto}
+%--------------------------------------------------------------------------
+\newcommand{\la}{\lambda}
+\newcommand{\om}{\omega}
+\newcommand{\Om}{\Omega}
+\newcommand{\De}{\Delta}
+\newcommand{\de}{\delta}
+\newcommand{\al}{\alpha}
+\newcommand{\te}{\theta}
+\newcommand{\be}{\beta}
+\newcommand{\ep}{\epsilon}
+\newcommand{\vep}{\varepsilon}
+%---------------------------------------------------------------------------
+\newcommand{\Co}{\ensuremath{\mathbf{C_o}}}
+\newcommand{\unif}{\mbox{uniformemente }}
+\newcommand{\convs}{\mbox{convergentes }}
+\newcommand{\conve}{\mbox{converge }}
+\newcommand{\conv}{\mbox{converg\^encia }}
+\newcommand{\dive}{\mbox{diverg\^encia }}
+\newcommand{\uni}{\rightrightarrows}
+\newcommand{\ngr}{\blacksquare}
+\newcommand{\co}{\mbox{\c co}}
+\newcommand{\re}{\Re{}e}
+\newcommand{\im}{\Im{}m}
+\newcommand{\funs}{\text{fun\c c\~oes }}
+\newcommand{\fun}{\text{fun\c c\~ao }}
+\newcommand{\Seqs}{\mbox{Sequ\^encia }}
+\newcommand{\Seq}{\mbox{Sequ\^encia }}
+\newcommand{\seq}{\mbox{sequ\^encia }}
+\newcommand{\seqs}{\mbox{sequ\^encias }}
+\newcommand{\ser}{\mbox{s\'erie }}
+\newcommand{\sers}{\mbox{s\'eries }}
+\newcommand{\pot}{\mbox{pot\^encias}}
+\newcommand{\conver}{\mbox{converg\^encia }}
+\newcommand{\per}{\mbox{per\'\i odo }}
+\newcommand{\peri}{\mbox{peri\'odica }}
+\newcommand{\cao}{\c c\~ao}
+\newcommand{\xb}{{\mathbf x}}
+\newcommand{\ab}{{\pmb A}}
+\newcommand{\fb}{{\pmb f}}
+\newcommand{\bo}{{\pmb b}}
+\newcommand{\bc}{{\pmb c}}
+\newcommand{\su}{{\pmb \sigma (\ub)}}
+%--------------------------------------
+\newcommand{\ca}{\c ca}
+\newcommand{\m}{\frac 12}
+\newcommand{\coes}{\c c\~oes}
+\newcommand{\ao}{\~ao}
+\renewcommand{\oe}{\~oe}
+\newcommand{\aos}{\~aos}
+\newcommand{\oes}{\~oes}
+\newcommand{\ii}{\'\i }
+\newcommand{\cou}{\c cou}
+%-------------------------------------------------
+\newcommand{\mm}[1]{\frac{#1}{2}}
+\newcommand{\man}[2]{\dst{\frac{#1}{#2}}}
+\newcommand{\ansq}[3]{\ensuremath{\dst{\left\{#1_{#2}\right\}_{#3\geq 1}}}}
+\newcommand{\telim}[3]{\ensuremath{\dst{\lim_{#1\to \infty}\,{#2}_{#3}}}}
+\newcommand{\telze}[3]{\ensuremath{\dst{\lim_{#1\to 0}\,{#2}_{#3}}}}
+\newcommand{\somin}[3]{\ensuremath{\dst{\sum_{#1\geq 0}\,{#2}_{#3}}}}
+\newcommand{\integral}[1]{\int_{A}^{B}{#1}\;dx}
+\newcommand{\integra}[1]{\int_{-\infty}^{\infty}{#1}\;dx}
+\newcommand{\ingral}[3]{\int_{#1}^{#2}{#3}\;dx}
+\newcommand{\tat}[2]{\ensuremath{T_{#1}(#2)}}
+\newcommand{\ral}[2]{\ensuremath{R(#1;#2)}}
+\newcommand{\inv}[3]{\ensuremath{(#1I-#2)^{#3}}}
+\newcommand{\nsq}[2]{\ensuremath{\dst{\left\{#1\right\}_{#2\geq 1}}}}
+%--------------------------------------------------
+\newcommand{\dst}{\displaystyle}
+\newcommand{\prv}{\noindent\textcolor{red}{\textbf{Prova.}}\ }
+\newcommand{\prova}{\noindent\textcolor{red}{\textbf{Prova.}}\ }
+\newcommand{\prueba}{\noindent\textcolor{red}{\textbf{Demonstração.}}\ }
+\newcommand{\solo}{\noindent\textcolor{red}{\textbf{Solução.}}\ }
+\newcommand{\sol}{\noindent\textcolor{red}{\textbf{Solução.}}\ }
+%-------------------------------------------------------------------------------
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+%-----------------------------
+\theoremstyle{plain} %Portuguese
+\newtheorem{teo}{Teorema}[section]
+\newtheorem{coro}{Corolário}[teo]
+\newtheorem{lema}[teo]{Lema}
+\newtheorem{prop}{Proposição}[section]
+\newtheorem*{propri}{Propriedade}
+%-------------------------------------------------------------------------
+\theoremstyle{definition}
+\newtheorem{hipo}{Hipótese}[section]
+\newtheorem{defi}{Definição}[section]
+\newtheorem{afi}{Afirmação}[section]
+\newtheorem{exm}{Exemplo}[section]
+\newtheorem{exc}[exm]{Exercício}
+%-------------------------------------------------------------------------
+\theoremstyle{remark}
+\newtheorem*{note}{\textbf{Nota}}
+\newtheorem*{rem}{Remark}
+\newtheorem{rema}[teo]{\textbf{Observação}}
+\newtheorem{case}{Case}
+%--------------------------------------------------------------------------
+\tcbuselibrary{listings,theorems}
+\newtcbtheorem
+  []% init options
+  {defic}% name
+  {Definição}% title
+  {%
+    colback=green!5,
+    colframe=green!35!black,
+    fonttitle=\bfseries,
+  }% options
+  {def}% prefix
+%---------------------------------------------------------------------------------
+\newtheoremstyle{obs}% name
+  {3pt}%      Space above
+  {3pt}%      Space below
+  {\itshape}%         Body font
+  {0.0in}% Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}% Thm head font
+  {.}%        Punctuation after thm head
+  {.5em}%     Space after thm head: " " = normal interword space;
+        %       \newline = linebreak
+  {}%         Thm head spec (can be left empty, meaning `normal')
+%-----------------------------------------------------------------------------------
+\newenvironment{fteo}
+{\begin{mdframed}\begin{teo}}
+{\end{teo}\end{mdframed}}
+%--------------------------------------------------------------------------------
+\theoremstyle{obs}
+\newtheorem{obs}{\textcolor{green}{Observação}}
+%-------------------------------------------
+\theoremstyle{exercicio}
+\newtheorem{exem}{Exemplo}
+\newtheorem{exer}{\textcolor{blue}{Exercício}}
+%--------------------------------------------------------------------
+\newtcbtheorem[number within=chapter]{theoc}{Teorema}{
+  enhanced,
+  sharp corners,
+  attach boxed title to top 
+  left={ yshifttext=-1mm
+  },
+  colback=white,
+  colframe=blue!75!black,
+  fonttitle=\bfseries,
+  boxed title style={
+    sharp corners,
+    size=small,
+    colback=blue!75!black,
+    colframe=blue!75!black,
+  } 
+}{thm}
+\newtcbtheorem[no counter]{prvc}{Prova}{
+  enhanced,
+  sharp corners,
+  attach boxed title to top left={
+    yshifttext=-1mm
+  },
+  colback=white,
+  colframe=blue!25,
+  fonttitle=\bfseries,
+  coltitle=black,
+  boxed title style={
+    sharp corners,
+    size=small,
+    colback=blue!25,
+    colframe=blue!25,
+  } 
+}{prf}
+%---------------------------------------------------------------------
+\includeonly{capitulos/cap1-cdi2-ct,capitulos/cap2-cdi2-ct,capitulos/cap3-cdi2-ct,capitulos/cap4-cdi2-ct,capitulos/cap5-cdi2-ct,apendix01-cdi2-ct,apendix02-cdi2-ct}
+%---------------------------------------------------------------------
+\pagestyle{plain}
+% this comes from the Front Matter section
+% it is commented out to not bother you
+%\usepackage{mymacros}
+%\makeatletter
+%\@addtoreset{chapter}{footnote}
+%\makeatother
+% end front matter
+\makeindex
+\begin{document}
+\onehalfspacing
+\thispagestyle{empty}
+%\include{pagetitle-cdi2-ct}
+\input{pagetitle-cdi2-ct}
+\pagenumbering{roman}
+%% here is the place to write your document's text
+%\include{prefacio-cdi2-ct}
+\input{prefacio-cdi2-ct}
+% Table of contents
+\tableofcontents
+\cleardoublepage
+%-------------------------------------------------------------------------
+% Listagem  de Figuras
+\listoffigures
+\cleardoublepage
+%-------------------------------------------------------------------------
+% Listagem de Tabelas
+\listoftables
+\cleardoublepage
+%===================== Capitulos ====================================
+\pagestyle{fancy}               	% Fancy headings
+\pagenumbering{arabic}				% Begin arabic page numbering (1,2,...)
+%-----------------------------------------------------------------------	
+%% here is the place to write your document's text
+\include{capitulos/cap1-cdi2-ct}
+\include{capitulos/cap2-cdi2-ct}
+\include{capitulos/cap3-cdi2-ct}
+\include{capitulos/cap4-cdi2-ct}
+\include{capitulos/cap5-cdi2-ct}	
+\appendix
+%
+%\input{apendix01-cdi2-ct}
+\include{apendix01-cdi2-ct}
+\cleardoublepage
+%
+%\input{apendix02-cdi2-ct}
+\include{apendix02-cdi2-ct}
+\cleardoublepage
+%
+%\input{index-cdi2-ct}
+\include{index-cdi2-ct}
+%-----------------------------------------------------------
+\addcontentsline{toc}{chapter}{Bibliografia}
+%--------------------------------------------------------------------
+\bibliographystyle{plain}
+\begin{thebibliography}{99}
+\bibitem{lince} Ince, E. L., \emph{Ordinary Differential Equations}, New York:Dover, (1953).
+\bibitem{chur} Churchill, V. R. \emph{Fourier Series and Boundary Value Problems},
+MacGraw-Hill, New York, (1990).
+\bibitem{krey} Kreyszig, E. \emph{Advanced Engineering Matemathematics},
+Seven edition, John Wiley \& Sons, Inc, New York, (1993).
+\bibitem{boy-prim} Boyce, E. W. \& DiPrima, C. \emph{Elementary Differential Equations and
+Boundary Value Problems}, Seven Edition, John Wiley \& Sons, Inc, New York, (2001).
+\bibitem{cou_hil} Courant, R. \& Hilbert, D. \emph{
+Methods of Mathematical Physics}, Vol. 2 ,
+Springer-Verlag, Berlin, (1980).
+\bibitem{joh} John, Fritz. \emph{Partial Differential Equations},
+Springer-Verlag, Berlin, (1990).
+\bibitem{rudi} Rudin, Walter \emph{Principles of Mathematical Analysis},
+MacGraw-Hill, 1976.
+\bibitem{mars} Marsden, J \& Hofman M., \emph{Elementary Classical Analysis}, Addison-Wesley, (1998)
+\end{thebibliography}
+\begin{theindex}
+\item comandos,
+\subitem
+\subitem
+\indexspace
+\item
+\end{theindex}
+\end{document}
+%Local Variables:
+%Tex-master:''master''
+%End:

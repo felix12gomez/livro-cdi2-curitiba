@@ -1,0 +1,262 @@
+%!PS-Adobe-2.0 EPSF-1.2
+%%Title: trian.art
+%%Creator: GST TurboDraw 3.0
+%%Pages: 1
+%%BoundingBox: 0 0 595 842
+%%EndComments
+/ArtProcsDict 160 dict def
+/ArtVarsDict 100 dict def ArtVarsDict begin /Timeout 0 def end ArtProcsDict begin /bd { bind def } bind def /ed { exch def } bd
+/np /newpath load def /cp /closepath load def /gs { /SavePrint? Print? def gsave } bd /gr { /Print? SavePrint? def grestore } bd
+/SS{}def /RS{}def /SM{}def /specialscreen? { currentscreen pop pop 30 lt } bd /min{2 copy gt{exch}if pop}bd
+/max{2 copy lt{exch}if pop}bd /maxof4 { 3{max}repeat } bd /pt { 1000 mul 72 div } bd /beginlayer { pop /LayerSave save def } bd
+/endlayer { LayerSave restore } bd /p { transform round .4 add exch round .4 add exch itransform } bd
+/c { p curveto } bd /m { p moveto } bd /l { p lineto } bd
+/mysetcmykcolor { 4 1 roll 3 { 3 index add 1 exch sub dup 0 lt{pop 0}if 3 1 roll } repeat setrgbcolor pop } bd
+/initcmykcolor { /setcmykcolor where dup /BwPrinter? exch not def { pop }{ /setcmykcolor /mysetcmykcolor load def } ifelse } bd
+/setcmyk { 4 copy SaveCmyk astore pop Comp? { BwPrinter? specialscreen? and { maxof4 1 exch sub setgray }{ setcmykcolor } ifelse }{
+SpotSep? { blank pop }{ 4 Separation roll dup 0 eq { blank pop }{ 1 exch sub setgray } ifelse } ifelse pop pop pop } ifelse } bd
+/currentcmyk { SaveCmyk aload pop } bd
+/applytint { 4{ 4 index mul 10000 div 4 1 roll }repeat setcmyk pop } bd
+/blank { 1 setgray /Print? OverPrint? not def 0 0 0 0 SaveCmyk astore pop } bd
+/setgraytint { dup 0 eq { OverPrint? not } { T } ifelse /Print? ed dup /SpotTint ed 100 div 1 exch sub setgray } bd
+/Colprocs 4 dict def Colprocs begin /arraytype { 100 exch aload pop applytint } bd /nametype { dup Colours exch get
+1 get not Comp? or { Colours exch get 0 get aload pop applytint }{ SpotSep? { Separation eq { setgraytint }{ pop blank } ifelse }{
+pop pop blank } ifelse } ifelse } bd /integertype { 0 0 0 100 applytint } bd /realtype /integertype load def end
+/setcolour { /Print? T def /SpotTint 0 def dup type Colprocs exch get exec } bd /ovp { /OverPrint? ed } bd
+/wif { /Winding? T def } bd /eof { /Winding? F def } bd /~stroke { Print? { stroke } if } bd /_stroke { setcolour ~stroke } bd
+/~fill { Print? { Winding? { fill } { eofill } ifelse } if } bd /_fill { setcolour ~fill } bd
+/_clip { Winding? { clip } { eoclip } ifelse } bd /sml { 2 div sin 1 exch div setmiterlimit } bd
+/sline { setlinewidth setlinejoin setlinecap } bd /li { Lines exch get exec } bd /fi { Fills exch get exec } bd
+/bg { gsave concat } bd /eg { grestore } bd /getbox { /Top ed /Right ed /Bottom ed /Left ed } bd
+/arcpop { arcto 4 { pop } repeat } bd
+/shape_rbox { /Rad ed getbox matrix currentmatrix exch concat np Left Right add 2 div Top p moveto
+Right Top p Right Bottom p Rad arcpop Right Bottom p Left Bottom p Rad arcpop Left Bottom p Left Top p Rad arcpop
+Left Top p Right Top p Rad arcpop cp setmatrix } bd
+/boxpath { np Left Top m Right Top l Right Bottom l Left Bottom l cp } bd
+/shape_box { getbox matrix currentmatrix exch concat boxpath setmatrix } bd
+/clip_box { getbox boxpath eoclip } bd
+/shape_ellipse { getbox matrix currentmatrix exch concat Left Top translate Right Left sub Bottom Top sub scale
+np .5 .5 .5 0 360 arc cp setmatrix } bd
+/artimage { gs /Bgd? exch def /Mask? exch def /Bits exch def /Height exch def /Width exch def getbox concat
+Bgd? { setcolour boxpath wif ~fill } if Left Top translate Right Left sub Bottom Top sub scale Mask? { setcolour
+Width Height true [ Width 0 0 Height 0 0 ] { currentfile ImageBuff readhexstring pop } imagemask
+}{  Width Height Bits [ Width 0 0 Height 0 0 ] { currentfile ImageBuff readhexstring pop } image } ifelse gr } bd
+/densitylookup { densitygreys 1 sub mul cvi densityarray exch get 1000 div neg 10 exch exp } bd
+/palettelookup { palettecols 1 sub mul cvi palettearray exch get 1000 div } bd
+/artcolimage { gs /Proc exch load def /Height ed /Width ed getbox concat Left Top translate Right Left sub Bottom Top sub scale
+/Im? T def /Wn Width def Width Height 8 [ Width 0 0 Height 0 0 ] /Proc load false 3 colorimage gr } bd
+/img4 { Im? { currentfile ImageBuff readhexstring pop 0 get -4 bitshift }{ ImageBuff 0 get }ifelse
+%--- see if we're at the end of a raster line
+Wn 1 sub dup 0 eq { pop Width T }{ Im? not } ifelse /Im? ed /Wn ed % use result as index into palette
+15 and palettearray exch get } bd
+/img8 { currentfile ImageBuff readhexstring pop 0 get palettearray exch get } bd
+/img24 { currentfile ImageRgbBuff readhexstring pop } bd
+/normalise { mark 1.0 1.0 .98 .9 .82 .68 .56 .48 .28 .1 .06 .0 counttomark dup 3 add -1 roll exch 2 sub mul dup floor cvi
+dup 3 1 roll sub exch dup 3 add index exch 2 add index dup 4 1 roll sub mul add counttomark 1 add 1 roll cleartomark } bd
+/?Negative {} bd
+/neg_transfer { /?Negative { 1 exch sub } bd {  ?Negative normalise DefTran } bind settransfer gs clippath 1 setgray fill gr } bd
+/flatclip { currentflat { gs { flattenpath _clip } stopped not {exit}if $error /errorname get /limitcheck ne { stop } if
+currentflat 80 gt { exit } if gr currentflat 1.1 mul 1 add setflat }loop setflat } bd
+/flatp { currentflat { {flattenpath} stopped not {exit}if currentflat 1 add setflat }loop setflat } bd
+/clipper { pathbbox flatclip /Bottom ed /Right ed /Top ed /Left ed Right Left sub /Width ed Bottom Top sub /Height ed } bd
+/examplefill { clipper Left Top translate Width Height scale gr } bd
+/GradFillDict 30 dict def
+/GrayProcs [ {} {dup mul} bind {} {} {9 mul 1 add log} bind {dup 1 exch sub mul 4 mul} bind ] def
+/grayconv { GrayProcs GradType get exec mul add } bd
+/grad_common_init { setcolour SpotSep? not { currentcmyk /StartK ed /StartY ed /StartM ed /StartC ed } if /StartT SpotTint def
+setcolour SpotSep? not { currentcmyk /EndK ed /EndY ed /EndM ed /EndC ed } if /EndT SpotTint def SpotSep? not {
+/EndC EndC StartC sub def /EndM EndM StartM sub def /EndY EndY StartY sub def /EndK EndK StartK sub def } if
+/EndT EndT StartT sub def /SolidFill? F def Comp? not { SpotSep? { StartT setgraytint EndT 0 eq /SolidFill? ed }{ mark
+StartC StartM StartY StartK 4 Separation roll 100 mul setgraytint EndC EndM EndY EndK 4 Separation roll 0 eq /SolidFill? ed
+cleartomark } ifelse } if } bd
+/grad_common_middle { /X ed SpotSep? { StartT EndT X grayconv setgraytint }{ StartC EndC X grayconv StartM EndM X grayconv
+StartY EndY X grayconv StartK EndK X grayconv setcmyk } ifelse } bd
+/linfill { GradFillDict begin grad_common_init /GradType ed neg /Theta ed /Steps GradType 3 ne { 200 } { 100 } ifelse def
+SolidFill? { ~fill }{ gs Theta rotate clipper Left Top translate Width Height scale 1 Steps 1 add div setlinewidth 0 1 Steps {
+dup Steps div grad_common_middle newpath .5 add Steps 1 add div 0 moveto 0 1 rlineto ~stroke } bind for gr gr }ifelse end } bd
+/radfill { GradFillDict begin grad_common_init /GradType ed /Steps GradType 0 ne { 200 } { 100 } ifelse def SolidFill? { ~fill }{
+clipper Left Right add 2 div Top Bottom add 2 div translate Width dup mul Height dup mul add sqrt 2 div dup scale Steps -1 1 {
+/Rad exch Steps div def Rad grad_common_middle np 0 Rad moveto 0 0 Rad 0 360 arc cp ~fill } bind for gr } ifelse end } bd
+/ArrowProcs [ {} {np 0 25 m 50 0 l 0 -25 l cp fill } {np 0 25 m 50 0 l 0 -25 l cp stroke }
+{np 0 0 m -10 25 l 50 0 l -10 -25 l cp fill } {np 5 0 m -5 25 l 50 0 l -10 -25 l cp stroke } {np -45 25 m 5 0 l -45 -25 l stroke }
+{np 0 25 m 0 -25 l stroke } {np 2 setlinejoin -50 25 m 0 0 l -50 -25 l 0 25 m 0 -25 l stroke } {np 50 25 m 0 0 l 50 -25 l stroke }
+{np 100 25 m 50 0 l 100 -25 l 50 0 m 0 0 l 50 25 m 0 0 l 50 -25 l stroke }
+{np 100 25 m 50 0 l 100 -25 l 45 -25 l 0 -5 l 0 5 l 45 25 l cp fill } ] def
+/arrow { gs translate dup 20 lt { pop 20 } if 10 div dup scale exch atan 180 add rotate 0 0 10 sline Print? {
+ArrowProcs exch get exec }{ pop } ifelse gr } bd
+/TiDict 20 dict def
+/tipos { dup 3 1 roll div floor mul } bd
+/_tile { TiDict begin /TiAngle ed 100 div /Tscale ed Tscale div /TiHgt ed Tscale div /TiWid ed /TiProc ed gs 1 setgray ~fill gr gs
+translate TiAngle neg rotate Tscale dup scale flatclip pathbbox /TiBottom ed /TiRight ed /TiTop ed /TiLeft ed
+TiTop TiHgt tipos TiHgt TiBottom { gs 0 exch translate TiLeft TiWid tipos TiWid TiRight { gs 0 translate /TiProc load
+ArtVarsDict begin exec end gr } for gr }for gr gr end } bd /begintext { matrix currentmatrix } bd /endtext { setmatrix } bd
+/ntm { exch dup setmatrix exch concat } bd /textstyle { /SimpleText? F def /filltext exch bind def } bd /plaintext { F ovp
+setcolour /SimpleText? T def } bd
+/tf { findfont 3 1 roll exch neg matrix scale makefont setfont } bd
+/txt { 3 1 roll moveto SimpleText? { Print? { show } if }{ { currentpoint np moveto tempstr 0 2 index put
+tempstr T charpath filltext pop } forall } ifelse } bd
+/filltext { } def
+/title { gs moveto {270 rotate} if 100 pt exch div dup neg scale /Helvetica findfont 10 scalefont setfont show gr } bd
+/regmark { gs translate 1 setlinewidth np -100 0 moveto 100 0 lineto stroke np 0 -100 moveto 0 100 lineto stroke
+np 0 0 50 0 360 arc stroke gr } bd
+/cropmark { gs 1 setlinewidth np moveto lineto stroke gr } bd
+/ANSI_Vec [ /grave/acute/circumflex/tilde/macron/breve/dotaccent/dieresis
+/ring/cedilla/hungarumlaut/ogonek/caron/dotlessi/.notdef/.notdef /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/space/exclam/quotedbl/numbersign/dollar/percent/ampersand/quotesingle
+/parenleft/parenright/asterisk/plus/comma/hyphen/period/slash /zero/one/two/three/four/five/six/seven
+/eight/nine/colon/semicolon/less/equal/greater/question /at/A/B/C/D/E/F/G /H/I/J/K/L/M/N/O /P/Q/R/S/T/U/V/W
+/X/Y/Z/bracketleft/backslash/bracketright/asciicircum/underscore /grave/a/b/c/d/e/f/g /h/i/j/k/l/m/n/o /p/q/r/s/t/u/v/w
+/x/y/z/braceleft/bar/braceright/asciitilde/.notdef /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/quoteleft/quoteright/quotedblleft/quotedblright/bullet/endash/emdash
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef /space/exclamdown/cent/sterling/currency/yen/brokenbar/section
+/dieresis/copyright/ordfeminine/guillemotleft/logicalnot/hyphen/registered/macron
+/degree/plusminus/twosuperior/threesuperior/acute/mu/paragraph/periodcentered
+/cedilla/onesuperior/ordmasculine/guillemotright/onequarter/onehalf/threequarters/questiondown
+/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla
+/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis
+/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/multiply /Oslash/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls
+/agrave/aacute/acircumflex/atilde/adieresis/aring/ae/ccedilla
+/egrave/eacute/ecircumflex/edieresis/igrave/iacute/icircumflex/idieresis
+/eth/ntilde/ograve/oacute/ocircumflex/otilde/odieresis/divide /oslash/ugrave/uacute/ucircumflex/udieresis/yacute/thorn/ydieresis
+] def
+/ReEncDict 12 dict def
+/ischar { BaseFontDict /CharStrings get exch known }bd
+/mapch { dup ischar not {pop /.notdef} if NewFont /Encoding get 3 1 roll put }bd
+/mapdegree{ 16#b0 /degree ischar {/degree}{/ring} ifelse mapch } bd
+/mapbb { 16#a6 /brokenbar ischar {/brokenbar}{/bar}ifelse mapch } bd
+/reencoderange { { dup ANSI_Vec exch get mapch } for } bd
+/reencode { 0 1 15 reencoderange 144 1 255 reencoderange 16#27 /quotesingle mapch 16#60 /grave mapch 16#7C /bar mapch
+mapdegree mapbb } bd
+/ansifont { ReEncDict begin /NewFontName exch def /BaseFontName exch def FontDirectory NewFontName known not {
+/BaseFontDict BaseFontName findfont def /NewFont BaseFontDict maxlength dict def BaseFontDict { exch dup /FID ne {
+dup /Encoding eq { exch dup length array copy NewFont 3 1 roll put }{ exch NewFont 3 1 roll put } ifelse }{ pop pop }ifelse }forall
+NewFont /FontName NewFontName put /A ischar /Z ischar and { reencode } if NewFontName NewFont definefont pop } if NewFontName end
+} bind def
+/setupsep { /Separation where { pop /Comp? F def Separation type 0 type ne /SpotSep? ed }{ /Comp? T def /SpotSep? F def } ifelse
+statusdict begin Timeout setjobtimeout end } bd
+/setsepscreen { AngleFix add /DefScrFun load setscreen } bd
+/include_epsf { /Bottom ed /Left ed gsave concat Left Bottom translate 1000 72 div dup neg scale /EpsfSave save def
+/showpage { } def currentfile cvx stopped { $error /newerror get { handleerror { currentfile LineBuff readline {
+(\045\045EndEPSF) eq { exit } if }{ } ifelse } loop } if }{ } ifelse $error /newerror F put EpsfSave restore grestore } bd
+/BuildDict 3 dict def
+/PointProcs[{}{closepath moveto}bind/lineto load/curveto load]def
+/gst_char { gstn 8 bitshift add /gstn ed /gsti gsti 1 add def gsti 3 eq { gstn 2047 and dup 1600 gt { 2048 sub } if
+gstn -11 bitshift 2047 and dup 1600 gt { 2048 sub } if gstn -22 bitshift 3 and PointProcs exch get exec /gstn 0 def /gsti 0 def
+} if } bd
+/gst_build { exch begin BuildDict begin Encoding exch get /gstn 0 def /gsti 0 def dup Metrics exch get 0 setcharwidth
+newpath CharStrings exch get { gst_char } forall closepath fill end end } bd
+/gst_fast { exch begin Encoding exch get dup Metrics exch get 0 setcharwidth CharStrings exch get cvx exec end } bd
+/newgstfont { ReEncDict begin /NewFontSize ed /NewFontId ed /NewFontFast ed /NewFontName ed 10 dict dup begin
+/FontMatrix [ .001 0 0 .001 0 0 ] def /FontType 3 def /FontBBox [ -400 -300 1600 1000 ] def /Encoding ANSI_Vec def
+/Metrics NewFontSize dict def Metrics /.notdef 0 put /CharStrings NewFontSize dict def CharStrings /.notdef () put
+/UniqueID 16#ff0000 NewFontId add def /gst_fast /gst_build NewFontFast { exch } if load /BuildChar ed pop end
+NewFontName exch definefont pop NewFontName end } bd
+/NewCharDict 4 dict def
+/newchar { NewCharDict begin /Proc ed /Wid ed /Code ed dup findfont begin Encoding Code get dup CharStrings exch /Proc load put
+Metrics exch Wid put end end } bd
+%%EndProlog
+%%BeginSetup
+/ArtworkSave save def ArtVarsDict begin /T true def /F false def 1 1 14 sline 10 sml /tempstr 1 string def /ImageBuff 1 string def
+/ImageRgbBuff 3 string def /LineBuff 256 string def /SimpleText? T def /Wind? T def /Print? T def /SaveCmyk 4 array def
+/Imat matrix identmatrix def /bignum 2 31 exp 1 sub def initcmykcolor /AngleFix 1 0 dtransform exch atan def
+currentscreen /DefScrFun exch def pop pop ArtProcsDict /Screens known { currentscreen Screens exch 0 exch put pop pop } if
+/DefTran currenttransfer def {normalise DefTran}bind settransfer
+/Colours 12 dict def Colours begin
+/Black [ [ 0 0 0 100 ] F ] def
+/Blue_Cyan [ [ 100 0 0 0 ] F ] def
+/Magenta__dark_ [ [ 51 99 44 15 ] F ] def
+/Yellow [ [ 0 0 100 0 ] F ] def
+/Blue [ [ 100 92 0 0 ] F ] def
+/Green [ [ 100 0 100 0 ] F ] def
+/Magenta [ [ 0 100 0 0 ] F ] def
+/Red [ [ 0 100 97 0 ] F ] def
+/Purple [ [ 53 96 0 0 ] F ] def
+/Green__dark_ [ [ 100 40 99 15 ] F ] def
+/Brown [ [ 51 71 98 15 ] F ] def
+/Red__dark_ [ [ 51 98 97 15 ] F ] def
+end
+/Fills 13 array def
+Fills 0 { gs F ovp 100 _fill gr } bind put % Plain Black
+Fills 1 { gs F ovp 100 /Blue_Cyan _fill gr } bind put % 
+Fills 2 { gs F ovp 50 /Yellow _fill gr } bind put % Plain Yellow 50%
+Fills 3 { gs F ovp 0 3 0 100 /Blue linfill gr } bind put % Lin BlueWhite 0
+Fills 4 { gs F ovp 90 3 100 /Blue_Cyan 100 /Green linfill gr } bind put % Lin GreenCyan 90
+Fills 5 { gs F ovp 45 3 100 /Red 100 /Magenta linfill gr } bind put % Lin MagentaRed 45
+Fills 6 { gs F ovp 0 4 100 /Magenta__dark_ 100 /Purple linfill gr } bind put % Log PurpleMagenta 0
+Fills 7 { gs F ovp 90 5 0 100 linfill gr } bind put % Cyl BlackWhite 90
+Fills 8 { gs F ovp 0 100 /Yellow 100 /Red radfill gr } bind put % Sun
+Fills 9 { gs F ovp 1 100 100 /Purple radfill gr } bind put % Sph PurpleBlack
+Fills 10 { gs F ovp 100 /Green__dark_ _fill gr } bind put % Random Green
+Fills 11 { gs F ovp 270 3 100 /Blue 100 /Blue_Cyan linfill gr } bind put % Sea
+Fills 12 { gs F ovp 100 /Blue_Cyan _fill gr } bind put % 
+/Lines 10 array def
+Lines 0 { gs 2 0 3 sline F ovp 100 _stroke gr } bind put % Hairline black
+Lines 1 { gs 2 0 14 sline F ovp 100 _stroke gr } bind put % 1pt Plain Black
+Lines 2 { gs 2 0 83 sline F ovp 100 /Blue _stroke gr } bind put % 6pt Plain Blue
+Lines 3 { gs 2 0 28 sline F ovp 100 _stroke gr } bind put % 2pt Plain Black
+Lines 4 { gs [ 60 60 ] 0 setdash 2 0 21 sline F ovp 100 /Red _stroke gr } bind put % 1.5pt Dotted Red
+Lines 5 { gs [ 540 180 ] 0 setdash 2 0 14 sline F ovp 100 /Magenta _stroke gr } bind put % 1pt Dashed Magenta
+Lines 6 { gs [ 180 120 60 120 ] 0 setdash 2 0 14 sline F ovp 100 /Green__dark_ _stroke gr } bind put % 1pt DashDot Green
+Lines 7 { gs [ 180 60 60 60 60 60 ] 0 setdash 2 0 14 sline F ovp 100 /Brown _stroke gr } bind put % 1.5pt DashDotDot Brown
+Lines 8 { gs [ 140 40 210 ] 0 setdash 0 0 42 sline F ovp 100 _stroke gr } bind put % 3pt Custom Black
+Lines 9 { gs [ 70 30 140 40 140 140 ] 0 setdash 0 0 28 sline F ovp 100 /Red__dark_ _stroke gr } bind put % 2pt Custom Red
+0 842 translate 72 1000 div dup neg scale
+setupsep
+%%EndSetup
+100 beginlayer
+np 1566 783 m 1581 6336 l gs 2 0 3 sline F ovp 100 _stroke gr
+100 setcolour 3 15 5553 3 1566 783 arrow
+np 960 3560 m 1027 3560 919 3567 986 3567 c 4750 3560 l gs 2 0 3 sline F ovp 100 _stroke gr
+100 setcolour 3 -3764 7 3 4750 3560 arrow
+np 3954 5915 m 1576 3566 l 4012 1130 l 3954 5915 l cp eof gs 2 0 42 sline F ovp 100 _stroke gr
+begintext
+Imat ntm 100 plaintext
+12 pt 12 pt /Helvetica /f18058 ansifont tf
+1420 3709 (0) txt
+endtext
+begintext
+Imat ntm 100 plaintext
+12 pt 12 pt /Helvetica /f18058 ansifont tf
+4629 3740 (x) txt
+endtext
+begintext
+Imat ntm 100 plaintext
+12 pt 12 pt /Helvetica /f18058 ansifont tf
+4000 1059 (P) txt
+endtext
+np 4229 1130 m 4162 5904 l gs 2 0 3 sline F ovp 100 _stroke gr
+100 setcolour 3 -67 4774 3 4229 1130 arrow 3 67 -4774 3 4162 5904 arrow
+np 1670 5120 m 3869 5144 l gs 2 0 3 sline F ovp 100 _stroke gr
+100 setcolour 3 2199 24 3 1670 5120 arrow 3 -2199 -24 3 3869 5144 arrow
+begintext
+Imat ntm 100 plaintext
+12 pt 12 pt /Helvetica /f18058 ansifont tf
+2570 5270 (h) txt
+endtext
+begintext
+Imat ntm 100 plaintext
+12 pt 12 pt /Helvetica /f18058 ansifont tf
+3000 3370 (s) txt
+endtext
+begintext
+Imat ntm 100 plaintext
+12 pt 12 pt /Helvetica /f18058 ansifont tf
+4300 3320 (L) txt
+endtext
+np 1650 3930 m 2670 3940 l gs 2 0 3 sline F ovp 100 _stroke gr
+100 setcolour 3 1020 10 3 1650 3930 arrow 3 -1020 -10 3 2670 3940 arrow
+begintext
+Imat ntm 100 plaintext
+12 pt 12 pt /Helvetica /f18058 ansifont tf
+2100 3880 (x) txt
+endtext
+np 2795 2382 m 2795 4742 l gs 2 0 28 sline F ovp 100 _stroke gr
+np 2888 2382 m 2888 4756 l gs 2 0 14 sline F ovp 100 _stroke gr
+100 setcolour 3 0 2374 14 2888 2382 arrow 3 0 -2374 14 2888 4756 arrow
+endlayer
+showpage
+%%Trailer
+end ArtworkSave restore end
+%%EOF
