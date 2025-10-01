@@ -1,0 +1,82 @@
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Gr\'{a}fico de uma \mbox {sequ\^encia }bem pr\'{o}xima de zero}}{9}{figure.caption.12}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Centros diferentes}}{133}{figure.caption.34}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Teorema de Laurent}}{159}{figure.caption.45}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Esfera de Riemann}}{164}{figure.caption.47}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Convergência Pontual}}{168}{figure.caption.49}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Convergência Uniforme}}{171}{figure.caption.50}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Intervalos de Convergência com centro \(a=b\)}}{194}{figure.caption.54}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces O percurso é \(\alpha \); a sua imagem é a curva \(\EuScript {C}\)}}{215}{figure.caption.58}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Hodógrafo de uma função vetorial \(r=\alpha \)}}{216}{figure.caption.59}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Hodógrafo \(\EuScript {C}=L\) de um raio vetor \(\alpha =\alpha (t)=r(t)\)}}{217}{figure.caption.60}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Hodógrafo \(\EuScript {C}_{1}=L_{1}\) de um raio vetor \(\alpha =\alpha (t)=\text {constante}\)}}{217}{figure.caption.61}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces \(\EuScript {L}\) é a linha reta no espaço através de \(P_{0}\) e na direção \(\boldsymbol {\nu }\); sua equação é \(\alpha (t) = P_{0} + t\,\boldsymbol {\nu }.\)}}{218}{figure.caption.62}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces \(\alpha (t) = \langle \cos t,\tmspace +\thickmuskip {.2777em} \sen t\rangle \) é um caminho cuja imagem \(\EuScript {C}\) é a circunferência unitária.}}{218}{figure.caption.63}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces A imagem de \(\alpha (t) =\langle t,\tmspace +\thickmuskip {.2777em} t^{2}\rangle \) é a parábola \(y = x^{2}\).}}{219}{figure.caption.64}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Reta \(\EuScript {L}\) de intersecção que define o hodógrafo do vetor}}{219}{figure.caption.66}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Esboço da curva circunferência com \(\alpha (t)=R(t)\)}}{221}{figure.caption.67}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Equação Cartesiana do gráfico}}{222}{figure.caption.68}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Esboço do Gráfico das equações Paramétricas}}{224}{figure.caption.70}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Interpretação geometricamente do limite}}{225}{figure.caption.71}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Representação Geométrica da derivação de funções Vetoriais}}{227}{figure.caption.73}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces O vetor \(\alpha '(t)\) é tangente ao caminho \(\alpha (t)\).}}{229}{figure.caption.74}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces A hélice \(\alpha (t) = (\cos t,\tmspace +\thickmuskip {.2777em} \sen t,\tmspace +\thickmuskip {.2777em} t)\) envolve o cilindro \(x^{2}+y^{2} = 1\).}}{230}{figure.caption.75}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces A reta tangente a um caminho.}}{231}{figure.caption.77}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Esboço de um parte da Circunferência}}{238}{figure.caption.80}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces O caminho da parábola com posição inicial \((0,\, 0,\, 1)\), velocidade inicial \(e_{1}+e_{2}\) e a aceleração constante \(-e_{3}\) é uma parábola no plano \(y = x\).}}{239}{figure.caption.81}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces A imagem do caminho regular \(\alpha (t) = (\cos 3 t,\tmspace +\thickmuskip {.2777em} \sen 3 t)\), um hipocicloide, não ``parece regular''.}}{240}{figure.caption.82}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Uma massa \(M\) atrai uma massa \(m\) com uma força \(\mathbf {F}\) dada pela lei da gravitação de Newton: \(\mathbf {F} = -G\,m\,M\, \mathbf {r}/r^{3}\).}}{241}{figure.caption.83}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces A posição, velocidade e aceleração de um partícula em movimento circular.}}{242}{figure.caption.84}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Noção Geométrica de Comprimento de Arco}}{244}{figure.caption.85}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Um partição \(P\) do intervalo \(E\) com \(\boldsymbol {f}=\alpha \)}}{245}{figure.caption.86}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Esboço da Curva}}{248}{figure.caption.87}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces O comprimento do arco de uma circunferência percorrido duas vezes é \(4\pi r\)}}{251}{figure.caption.88}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Percurso regular por partes}}{253}{figure.caption.89}%
+\contentsline {figure}{\numberline {3.27}{\ignorespaces A curva traçada por um ponto que se move na borda de um círculo rolante é chamada de cicloide.}}{254}{figure.caption.90}%
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Diferencial do comprimento do arco.}}{254}{figure.caption.91}%
+\contentsline {figure}{\numberline {3.29}{\ignorespaces O raio vetor \(\alpha \) de um ponto \(M\) da curva \(L\)}}{256}{figure.caption.92}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A taxa de variação de \(f\) em a direção de \(u\) no ponto \(P_{0}\) é a taxa com que \(f\) varia ao longo desta reta em \(P_{0}\).}}{262}{figure.caption.94}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces A inclinação da curva \(\EuScript {C}\) em \(P_{0}\) é \(\displaystyle {\lim _{p\to Q}}\text {coeficiente angular\,(PQ)}\); esta é a derivada direcional \(\left (\dfrac {df}{ds} \right )_{u,\tmspace +\thickmuskip {.2777em} P_{0}} = (D_{u}f)_{P_{0}}\)}}{263}{figure.caption.95}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces A taxa com que $f$ varia na direção de $u$ é \(\nabla f\cdot u=-1$}}{266}{figure.caption.96}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces \(U\) é o vetor unitário \(\cos \theta \, i + \sen \theta \, j\) }}{266}{figure.caption.97}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Definição de derivada direcional com vetor unitário \(u=\cos \theta \,i +\sen \theta \, j\)}}{266}{figure.caption.98}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces A direção em que $f(x,\, y)$ aumenta mais rapidamente em \((1,\tmspace +\thickmuskip {.2777em} 1)\) é a direção de \((\nabla f)_{(1,\, 1)}=i+j\). Corresponde à direção e ao sentido de subida mais íngreme na superfície em \((1,\, 1,\, 1)\)}}{268}{figure.caption.99}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Um campo vetorial \(\mathbf {F}\) atribui um vetor \(\mathbf {F}(\mathbf {x})\) a cada ponto \(\mathbf {x}\) de seu domínio }}{272}{figure.caption.101}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Uma região \(W\) fluindo ao longo das linhas de fluxo de um campo vetorial.}}{274}{figure.caption.103}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces O fluido está se expandindo.}}{274}{figure.caption.104}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces O campo vetorial \(\mathbf {F}(x,\tmspace +\thickmuskip {.2777em} y) = x\, i + y\, j\)}}{275}{figure.caption.105}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Domínio e correspondência da função \(f\)}}{282}{figure.caption.110}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Domínio da função \(\ln (x-y)\)}}{283}{figure.caption.111}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Domínio da função \(z=g(\mathbf {x})\)}}{284}{figure.caption.112}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Domínio da função de duas variáveis}}{286}{figure.caption.113}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces \relax }}{286}{figure.caption.114}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces \relax }}{287}{figure.caption.115}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Gráfico da função \(z=f(\mathbf {x})\) no primeiro octante}}{291}{figure.caption.117}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Hemisfério Superior}}{291}{figure.caption.118}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Semi-elipsoide superior}}{291}{figure.caption.118}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Esboço da função \(f(x,\tmspace +\thickmuskip {.2777em} y) = x^{2}+y^{2}\)}}{292}{figure.caption.119}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Dois gráficos pela Curvas de Nível}}{293}{figure.caption.120}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Curvas de Nível}}{294}{figure.caption.121}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Superfície}}{294}{figure.caption.121}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Curvas de Nível}}{295}{figure.caption.122}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Superfície sela}}{295}{figure.caption.122}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces \relax }}{296}{figure.caption.123}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Curvas de nível}}{297}{figure.caption.124}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces \relax }}{298}{figure.caption.126}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Curvas de nível da função \(f\)}}{299}{figure.caption.127}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Algumas curvas de nível sobre o gráfico da função \(f\)}}{300}{figure.caption.128}%
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Algumas Superfícies de nível para \(f\)}}{300}{figure.caption.129}%
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Algumas superfícies de nível da função \(f\)}}{301}{figure.caption.130}%
+\contentsline {figure}{\numberline {5.24}{\ignorespaces A seção \(y=0\) do gráfico da função \(f\)}}{302}{figure.caption.131}%
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Composição de funções}}{303}{figure.caption.132}%
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Domínio Esférico}}{304}{figure.caption.133}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Continuidade Uniforme}}{309}{figure.caption.135}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Valor Médio}}{311}{figure.caption.136}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Imagem das funções c e d}}{315}{figure.caption.137}%

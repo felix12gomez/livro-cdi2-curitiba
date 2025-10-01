@@ -1364,25 +1364,25 @@ de reta para o próximo ponto \(P_{i}\) (veja a Figura~\ref{fig:1561}).
   \caption{Noção Geométrica de Comprimento de Arco}\label{fig:1561}
 \end{figure}
 
-O número de unidades para comprimento do segmento de reta de \(P_{i-1}\) a \(P_{i}\) é denotado por \(\overline{P_{i-1}P_{i}}\). Da fórmula da distância temos
+O número de unidades para comprimento do segmento de reta de \(P_{i-1}\) a \(P_{i}\) é denotado por \(\|\overline{P_{i-1}P_{i}}\|\). Da fórmula da distância temos
 \begin{equation*}
-\overline{P_{i-1}P_{i}}=\sqrt{[f(t_{i})-f(t_{i-1})]^{2}+[g(t_{i})-g(t_{i-1})]^{2}}
+\|\overline{P_{i-1}P_{i}}\|=\sqrt{[f(t_{i})-f(t_{i-1})]^{2}+[g(t_{i})-g(t_{i-1})]^{2}}
 \end{equation*}
 
 A soma dos números das unidades de comprimento dos $n$ segmentos de linha é
 \begin{equation*}
-  \sum_{i=1}^{n}\overline{P_{i-1}P_{i}}
+  \sum_{i=1}^{n}\|\overline{P_{i-1}P_{i}}\|
 \end{equation*}
 
 
 \begin{defi}[Comprimento de Arco]\label{def:14-5-1}
 	Suponha que a curva \( \mathcal{C}\) tenha equações paramétricas \(x = f (t)\) e \(y = g (t)\). Então, se existe um número \(L\) tendo a propriedade de que para qualquer \(\varepsilon > 0\) existe um \( \delta> 0\) tal que
 	\begin{equation*}
-		\left|\sum_{i=1}^{n}\overline{P_{i-1}P_{i}}- L \right| < \varepsilon
+		\left|\sum_{i=1}^{n}\|\overline{P_{i-1}P_{i}}\|- L \right| < \varepsilon
 	\end{equation*}
 	para cada partição \(P\) do intervalo \([a,\; b]\) para a qual a norma \(\|{P}\| <\delta\), escrevemos
 	\begin{equation*}
-		L=\lim_{\|{P}\| \to 0}\sum_{i=1}^{n}\overline{P_{i-1}P_{i}}
+		L=\lim_{|{P}| \to 0}\sum_{i=1}^{n}\|\overline{P_{i-1}P_{i}}\|
 	\end{equation*}
 	e \(L\) é denominado comprimento do arco da curva \(\mathcal{C}\) do ponto \((f(a),\; g (a))\) ao ponto
 	\((f(b),\; g (b))\).
@@ -1391,7 +1391,8 @@ A soma dos números das unidades de comprimento dos $n$ segmentos de linha é
 O arco da curva é \textbf{retificável} se o limite na Definição~\ref{def:14-5-1} existir. Se \(f'\) e \(g'\) são contínuas em \([a,\; b]\), podemos
 encontrar uma fórmula para calcular o limite \(L\).
 
-Nossa noção intuitiva do \emph{comprimento do arco} de \(t = a\) até \(t = b\) nos leva a definir o número de unidades do comprimento do arco como o limite da soma quando a norma da partição \(\|{P}\|\) se aproxima de zero.  Uma outra forma mais analítica é a seguinte.
+Nossa noção intuitiva do \emph{comprimento do arco} de \(t = a\) até \(t = b\) nos leva a definir o número 
+de unidades do comprimento do arco como o limite da soma quando a norma da partição \(|{P}|\) se aproxima de zero.  Uma outra forma mais analítica é a seguinte.
 
 Seja \(\mathcal{C}\) uma curva descrita pela transformação \(\alpha\) de um intervalo fechado 
 \([a,\; b]\) em \(\mathbb{R}^{n}\). Considere uma partição \(P =\{t_{i} \in E\vcentcolon i = 0,\ldots, 
